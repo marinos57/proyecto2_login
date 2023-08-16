@@ -1,10 +1,7 @@
 import { validarFormulario, Toast } from "../funciones";
-
-const formLogin = document.querySelector('form')
-
+const formLogin = document.querySelector('form');
 const login = async e => {
     e.preventDefault();
-
     if (!validarFormulario(formLogin)) {
         Toast.fire({
             icon: 'info',
@@ -12,7 +9,6 @@ const login = async e => {
         })
         return;
     }
-
     try {
         const url = '/proyecto2_login/API/login'
 
@@ -29,8 +25,8 @@ const login = async e => {
         }
         const respuesta = await fetch(url, config);
         const data = await respuesta.json();
-
         const {codigo, mensaje, detalle} = data; 
+        //console.log(data);
         let icon = 'info'; 
         if(codigo == 1){
             icon = 'success'
@@ -39,16 +35,12 @@ const login = async e => {
         }else{
             icon='error'
         }
-
         Toast.fire({
             title : mensaje, 
             icon
         })
-
     } catch (error) {
         console.log(error);
     }
 }
-
-
 formLogin.addEventListener('submit', login);

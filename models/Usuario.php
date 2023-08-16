@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Model;
 
 Class Usuario extends ActiveRecord{

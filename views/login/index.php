@@ -4,12 +4,12 @@
         <div class="row mb-3">
             <div class="col">
                 <label for="usu_catalogo" class="form-label">Catálogo</label>
-                <input type="number" class="form-control" id="usu_catalogo">
+                <input type="number" class="form-control" id="usu_catalogo" name="usu_catalogo">
             </div>
             <div class="row mb-3">
                 <div class="col">
                     <label for="usu_password" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="usu_password">
+                    <input type="password" class="form-control" id="usu_password" name="usu_password">
                 </div>
             </div>
             <div class="d-grid">
@@ -17,6 +17,8 @@
             </div>
         </div>
     </form>
-<p class="mb-0 text-center">¿No tiene una cuenta?<a href="/login_prueba/registro" class="text-primary fw-bold ms-2">Registrarse</a></p>
+</div class="mt-3">
+<p class="mb-0 text-center">¿No tiene una cuenta?<a href="/login/registro" class="text-primary fw-bold ms-2">Registrarse</a></p>
 <script src="<?= asset('./build/js/login/index.js') ?>"></script>
+</div>
 </div>

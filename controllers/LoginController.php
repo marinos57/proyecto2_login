@@ -3,7 +3,9 @@
 namespace Controllers;
 
 use Exception;
+use Model\Usuario;
 use MVC\Router;
+use Model\ActiveRecord; 
 
 class LoginController
 {
@@ -21,14 +23,14 @@ class LoginController
         try {
             if (is_array($usuarioRegistrado)) {
                 $verificacion = password_verify($password, $usuarioRegistrado['usu_password']);
-                $nombre = $usuarioRegistrado['usu_nombre'];
+                $nombre = $usuarioRegistrado["usu_nombre"];
                 if ($verificacion) {
                     session_start();
                     $_SESSION['auth_user'] = $catalogo;
 
                     echo json_encode([
                         'codigo' => 1,
-                        'mensaje' => "Sesion iniciada correctamente. Bienvenido {$nombre}"
+                        'mensaje' => "Sesion iniciada correctamente. Bienvenido $nombre"
                     ]);
                 } else {
                     echo json_encode([
