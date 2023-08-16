@@ -4,7 +4,7 @@ module.exports = {
   mode: 'development',
   watch: true,
   entry: {
-    // 'js/app' : './src/js/app.js',
+    'js/app' : './src/js/app.js',
     'js/inicio' : './src/js/inicio.js',
     'js/login/index' : './src/js/login/index.js',
 
