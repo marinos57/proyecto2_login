@@ -54,4 +54,8 @@ const login = async e => {
     }
 }
 
+// window.history.pushState(null, null, window.location.href);
+// window.onpopstate = function(event) {
+//     window.history.go(1);
+//     };
 formLogin.addEventListener('submit', login);
