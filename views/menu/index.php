@@ -23,25 +23,25 @@
                         <ul class="dropdown-menu  dropdown-menu-dark "id="dropwdownRevision" style="margin: 0;">
                             <!-- <h6 class="dropdown-header">Información</h6> -->
                             <li>
-                                <a class="dropdown-item nav-link text-white " href="/proyecto2_login/"><i class="ms-lg-0 ms-2 bi bi-plus-circle me-2"></i>GRADOS</a>
+                                <a class="dropdown-item nav-link text-white " href="/proyecto2_login/"><i class="ms-lg-0 ms-2 bi bi-plus-circle me-2"></i>sub item</a>
                             </li>
                             <li>
-                                <a class="dropdown-item nav-link text-white " href="/proyecto2_login/"><i class="ms-lg-0 ms-2 bi bi-plus-circle me-2"></i>MATERIAS</a>
+                                <a class="dropdown-item nav-link text-white " href="/proyecto2_login/"><i class="ms-lg-0 ms-2 bi bi-plus-circle me-2"></i>sub item</a>
                             </li>
                             <li>
-                                <a class="dropdown-item nav-link text-white " href="/proyecto2_login/"><i class="ms-lg-0 ms-2 bi bi-plus-circle me-2"></i>ARMAS</a>
+                                <a class="dropdown-item nav-link text-white " href="/proyecto2_login/"><i class="ms-lg-0 ms-2 bi bi-plus-circle me-2"></i>sub item</a>
                             </li>
                             <li>
-                                <a class="dropdown-item nav-link text-white " href="/proyecto2_login/"><i class="ms-lg-0 ms-2 bi bi-plus-circle me-2"></i>CALIFICACIONES</a>
+                                <a class="dropdown-item nav-link text-white " href="/proyecto2_login/"><i class="ms-lg-0 ms-2 bi bi-plus-circle me-2"></i>subitem</a>
                             </li>
                             <li>
-                                <a class="dropdown-item nav-link text-white " href="/proyecto2_login/"><i class="ms-lg-0 ms-2 bi bi-plus-circle me-2"></i>ASIGNACIONES</a>
+                                <a class="dropdown-item nav-link text-white " href="/proyecto2_login/"><i class="ms-lg-0 ms-2 bi bi-plus-circle me-2"></i>subitem</a>
                             </li>
                             <li>
-                                <a class="dropdown-item nav-link text-white " href="/proyecto2_login/"><i class="ms-lg-0 ms-2 bi bi-plus-circle me-2"></i>ALUMNOS</a>
+                                <a class="dropdown-item nav-link text-white " href="/proyecto2_login/"><i class="ms-lg-0 ms-2 bi bi-plus-circle me-2"></i>sub item</a>
                             </li>
                             <li>
-                                <a class="dropdown-item nav-link text-white " href="/proyecto2_login/"><i class="ms-lg-0 ms-2 bi bi-plus-circle me-2"></i>NOTAS</a>
+                                <a class="dropdown-item nav-link text-white " href="/proyecto2_login/"><i class="ms-lg-0 ms-2 bi bi-plus-circle me-2"></i>subitem</a>
                             </li>
                     
                         
@@ -49,10 +49,12 @@
                     </div> 
 
                 </ul> 
+                <form>
                 <div class="col-lg-1 d-grid mb-lg-0 mb-2">
                     <!-- Ruta relativa desde el archivo donde se incluye menu.php -->
-                    <a href="/menu/" class="btn btn-danger"><i class="bi bi-arrow-bar-left"></i>MENÚ</a>
+                    <button  class="btn btn-danger" id="closeSession" name="closeSession" type="input"><i class="bi bi-arrow-bar-left"></i>CERRAR SESIÓN</button>
                 </div>
+                </form>
 
             
             </div>

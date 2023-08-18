@@ -6,17 +6,15 @@ use MVC\Router;
 use Controllers\AppController;
 use Controllers\LoginController;
 use Controllers\MenuController;
+//use Controllers\AuthMiddleware;
 
 $router = new Router();
 $router->setBaseURL('/' . $_ENV['APP_NAME']);
 
-$router->get('/', [AppController::class,'index']);
-
 $router->get('/', [LoginController::class,'index']);
 $router->post('/API/login', [LoginController::class,'loginAPI']);
-
 $router->get('/menu', [MenuController::class,'index']);
-
+$router->get('/API/closeSession', [MenuController::class,'closeSessionAPI']);
 
 
 // Comprueba y valida las rutas, que existan y les asigna las funciones del Controlador

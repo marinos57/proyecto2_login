@@ -2,18 +2,20 @@
 
 namespace Controllers;
 
-use Exception;
-
 use MVC\Router;
-use Model\ActiveRecord; 
 
-class MenuController
-{
+class MenuController {
+
     public static function index(Router $router)
-    {
-        $router->render('menu/index', []);
+    {        
+        if ($_SESSION['auth_user'] != "") {
+            $router->render('menu/index', []);
+        } else {
+            $router->render('login/index', []);
+        }
+    }
+    public static function closeSessionAPI() {
+       unset($_SESSION['auth_user']);
     }
 
-  
-  
 }
